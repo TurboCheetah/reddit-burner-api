@@ -1,0 +1,11 @@
+{
+  "extends": ["config:base", "group:allNonMajor"],
+  "labels": ["Meta: Dependencies"],
+  "schedule": ["before 12pm on Sunday"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}

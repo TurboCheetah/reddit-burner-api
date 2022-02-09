@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  ts-boilerplate:
+    image: ghcr.io/turbocheetah/ts-boilerplate:latest
+    container_name: ts-boilerplate
+    restart: 'unless-stopped'
+    ports:
+      - '3000:3000'
