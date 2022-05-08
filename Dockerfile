@@ -1,4 +1,4 @@
-FROM node:16-alpine AS builder
+FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package.json yarn.lock .yarnrc.yml ./
 COPY .yarn/ .yarn/
@@ -6,7 +6,7 @@ RUN yarn install --immutable
 COPY . .
 RUN yarn build
 
-FROM node:16-alpine AS production-dependencies
+FROM node:18-alpine AS production-dependencies
 
 WORKDIR /app
 COPY --from=builder /app/package.json /app/yarn.lock /app/.yarnrc.yml ./
