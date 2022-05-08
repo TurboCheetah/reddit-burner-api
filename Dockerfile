@@ -13,7 +13,7 @@ COPY --from=builder /app/package.json /app/yarn.lock /app/.yarnrc.yml ./
 COPY --from=builder /app/.yarn /app/.yarn/
 RUN yarn workspaces focus --all --production
 
-FROM gcr.io/distroless/nodejs:16 as runner
+FROM gcr.io/distroless/nodejs:18 as runner
 WORKDIR /app
 USER 1000
 COPY --from=production-dependencies /app .
