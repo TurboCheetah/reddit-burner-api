@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "@types/eslint": "8.4.2",
-    "@types/jest": "27.5.0",
-    "@types/node": "16.11.33",
+    "@types/jest": "27.5.1",
+    "@types/node": "16.11.35",
     "@types/supertest": "2.0.12",
-    "@typescript-eslint/eslint-plugin": "5.22.0",
-    "@typescript-eslint/parser": "5.22.0",
+    "@typescript-eslint/eslint-plugin": "5.23.0",
+    "@typescript-eslint/parser": "5.23.0",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-standard": "17.0.0",
@@ -60,5 +60,5 @@
       "yarn test --bail --watchAll=false --findRelatedTests"
     ]
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.1"
 }
