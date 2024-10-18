@@ -60,5 +60,5 @@
       "yarn test --bail --watchAll=false --findRelatedTests"
     ]
   },
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@4.5.1"
 }
